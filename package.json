@@ -1,0 +1,25 @@
+{
+  "name": "blockchain",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "node_1": "nodemon --watch dev -e js dev/networkNode.js 9001 http://localhost:9001",
+    "node_2": "nodemon --watch dev -e js dev/networkNode.js 9002 http://localhost:9002",
+    "node_3": "nodemon --watch dev -e js dev/networkNode.js 9003 http://localhost:9003",
+    "node_4": "nodemon --watch dev -e js dev/networkNode.js 9004 http://localhost:9004",
+    "node_5": "nodemon --watch dev -e js dev/networkNode.js 9005 http://localhost:9005"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "nodemon": "^1.18.7",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2",
+    "sha256": "^0.2.0",
+    "uuid": "^3.3.2"
+  }
+}
